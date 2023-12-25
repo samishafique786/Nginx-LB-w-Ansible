@@ -1,0 +1,26 @@
+Host *
+    ForwardAgent yes
+
+Host JumpHost
+    Hostname x.x.x.x # public ip adress of your JumpServer
+    User ubuntu
+    Port 22
+    IdentityFile ~/.ssh/yourkeypair.pem
+
+Host WebServer1
+    Hostname 192.168.1.17 #private ip of webserver1
+    User ubuntu
+    ProxyJump JumpHost
+    IdentityFile ~/.ssh/yourkeypair.pem
+
+Host WebServer2
+    Hostname 192.168.1.7 #private ip of webserver1
+    User ubuntu
+    ProxyJump JumpHost
+    IdentityFile ~/.ssh/yourkeypair.pem
+
+Host WebServer3
+    Hostname 192.168.1.8 #private ip of webserver1
+    User ubuntu
+    ProxyJump JumpHost
+    IdentityFile ~/.ssh/yourkeypair.pem
