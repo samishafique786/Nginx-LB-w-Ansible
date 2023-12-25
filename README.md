@@ -28,6 +28,7 @@ Nginx-LB-w-Ansible
 └── Terraform
     ├── main.tf
     └── providers.tf
+```
 
 ## File Details
 
