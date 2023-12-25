@@ -36,7 +36,7 @@ Nginx-LB-w-Ansible
 
 #### `providers.tf`
 
-This file configures the OpenStack provider for Terraform. Replace `<YOUR_USERNAME>`, `<YOUR_PASSWORD>`, `<YOUR_KEYPAIR>`, `<PUBLIC_IP>`, and `<PRIVATE_IP>` with your actual values.
+This file configures the OpenStack provider for Terraform. Replace `<YOUR_USERNAME>`, `<YOUR_PASSWORD>`,  with your actual values.
 
 #### `main.tf`
 
@@ -84,7 +84,7 @@ SSH configuration file specifying connection details for JumpHost and web server
 
    - Update the `csc.ini` file in the `ansible/inventory` directory.
    - Update the SSH configuration in the `ssh/config` file with your keypair details.
-   - Run Ansible playbook: `cd ansible && ansible-playbook pb.yml`.
+   - Run Ansible playbook: `"cd ansible" && "ansible-playbook pb.yml"`.
 
 3. **Accessing the Environment:**
 
